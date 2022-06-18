@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* css3盒子模型
+ */
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        /* html 背景色 */
+        
+        html {
+            background-color: #e2e2e2;
+        }
+        
+        body {
+            /* 清除外边距 */
+            margin: 0;
+            /* 清除内边距 */
+            padding: 0;
+            /* body背景色 */
+            background-color: #e2e2e2;
+        }
+        
+        a {
+            /* a标签清除下滑线*/
+            text-decoration: none;
+        }
+        
+        .login-form-wrap {
+            /* 左右居中  上10px 下20px */
+            margin: 10px auto 20px auto;
+            /*高度50px 左右30px 内边距*/
+            padding: 50px 30px 0 30px;
+text-align: center;
+            /* 宽度 */
+            width: 360px;
+            /* 高度 */
+            height: 380px;
+            /* 背景色 */
+            background-color: #5170ad;
+            /* 5像素圆角 */
+            border: radius 5px;
+            /* 阴影 */
+            box-shadow: 0 1px #5670a4 inset, 0 0 10px 5px rgba(0, 0, 0, 0.2);
+            /* 兼容各大浏览器内核*/
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        
+        .login-form-wrap>h1 {
+            /* 外边距:上0 右0 下50px 左 */
+            margin: 0 0 50px 0;
+            /* 内边距 */
+            padding: 0;
+            /* 文字颜色白色 */
+            color: #fff;
+            font-size: 26px;
+        }
+        
+        .login-form-wrap .login-form {
+            /*  按钮样式*/
+        }
+        
+        .login-form-wrap .login-form lable {
+            /* 鼠标放上  光标效果 */
+            cursor: default;
+        }
+.login-form-wrap .login-form .em-ail {
+            /* 底边框样式无 */
+            border-bottom: none;
+            /* 圆角左上  右上 */
+            border-radius: 4px 4px 0 0;
+            box-shadow: 0 -1px 0 #e0e0e0 inset, 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+        }
+        
+        .login-form-wrap .login-form .pass-word {
+            /* 顶边框样式无 */
+            border-top: none;
+            /* 圆角左下角  右下角*/
+            border-radius: 0 0 4px 4px;
+        }
+        
+        .login-form-wrap .login-form .pass-word,
+        .login-form-wrap .login-form .em-ail {
+            /*宽度100%*/
+            width: 100%;
+            /*轮廓无*/
+            outline: none;
+            /*内边框  上下 12  左右20  */
+            padding: 12px 20px;
+            /* 文字颜色*/
+            color: #afafaf;
+            /* 字体不加粗*/
+            font-weight: 400;
+            /* 鼠标变成小手*/
+            cursor: pointer;
+            /* 无边框*/
+            border: 0;
+        }
+        
+        .login-form-wrap .login-form .btn {
+/* 宽度100%*/
+            width: 100%;
+            /* 顶部外边距20px*/
+            margin-top: 20px;
+            /* 内边距左右10 上下20*/
+            padding: 10px 20px;
+            /* 圆角4px */
+            border-radius: 4px;
+            /* 边框无*/
+            outline: none;
+            /* 文字颜色*/
+            color: #999;
+            /* 字体大小*/
+            font-size: 18px;
+            /* 阴影*/
+            box-shadow: 0 -1px 0 #e0e0e0 inset, 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+        }
+        
+        .login-form-wrap .zhaohui {
+            margin: 20px auto;
+            width: 60%;
+            height: 30px;
+            /*     垂直居中*/
+            line-height: 30px;
+        }
+        
+        .login-form-wrap a {
+            /*   a标签是行内元素，必须转换为块状元素*/
+            display: block;
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <section class="login-form-wrap">
+            <h1>注册表</h1>
+            <!-- form表单 -->
+            <form class="login-form" action="post">
+                <label for="#"> 
+                    <!-- 邮箱 -->
+                <input type="email" name="email" required placeholder="Email" class="em-ail">
+                </label>
+                <!-- 密码 -->
+                <label for="#"> 
+                    <input type="password" name="password" class="pass-word" required placeholder="Password">
+                </label>
+                <button class="btn">登录</button>
+            </form>
+            <!-- 找回密码 -->
+            <h5 class="zhaohui">
+                <a href="#">找回密码</a>
+            </h5>
+        </section>
+    </body>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* css3盒子模型
+ */
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        /* html 背景色 */
+        
+        html {
+            background-color: #e2e2e2;
+        }
+        
+        body {
+            /* 清除外边距 */
+            margin: 0;
+            /* 清除内边距 */
+            padding: 0;
+            /* body背景色 */
+            background-color: #e2e2e2;
+        }
+        
+        a {
+            /* a标签清除下滑线*/
+            text-decoration: none;
+        }
+        
+        .login-form-wrap {
+            /* 左右居中  上10px 下20px */
+            margin: 10px auto 20px auto;
+            /*高度50px 左右30px 内边距*/
+            padding: 50px 30px 0 30px;
+text-align: center;
+            /* 宽度 */
+            width: 360px;
+            /* 高度 */
+            height: 380px;
+            /* 背景色 */
+            background-color: #5170ad;
+            /* 5像素圆角 */
+            border: radius 5px;
+            /* 阴影 */
+            box-shadow: 0 1px #5670a4 inset, 0 0 10px 5px rgba(0, 0, 0, 0.2);
+            /* 兼容各大浏览器内核*/
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        
+        .login-form-wrap>h1 {
+            /* 外边距:上0 右0 下50px 左 */
+            margin: 0 0 50px 0;
+            /* 内边距 */
+            padding: 0;
+            /* 文字颜色白色 */
+            color: #fff;
+            font-size: 26px;
+        }
+        
+        .login-form-wrap .login-form {
+            /*  按钮样式*/
+        }
+        
+        .login-form-wrap .login-form lable {
+            /* 鼠标放上  光标效果 */
+            cursor: default;
+        }
+.login-form-wrap .login-form .em-ail {
+            /* 底边框样式无 */
+            border-bottom: none;
+            /* 圆角左上  右上 */
+            border-radius: 4px 4px 0 0;
+            box-shadow: 0 -1px 0 #e0e0e0 inset, 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+        }
+        
+        .login-form-wrap .login-form .pass-word {
+            /* 顶边框样式无 */
+            border-top: none;
+            /* 圆角左下角  右下角*/
+            border-radius: 0 0 4px 4px;
+        }
+        
+        .login-form-wrap .login-form .pass-word,
+        .login-form-wrap .login-form .em-ail {
+            /*宽度100%*/
+            width: 100%;
+            /*轮廓无*/
+            outline: none;
+            /*内边框  上下 12  左右20  */
+            padding: 12px 20px;
+            /* 文字颜色*/
+            color: #afafaf;
+            /* 字体不加粗*/
+            font-weight: 400;
+            /* 鼠标变成小手*/
+            cursor: pointer;
+            /* 无边框*/
+            border: 0;
+        }
+        
+        .login-form-wrap .login-form .btn {
+/* 宽度100%*/
+            width: 100%;
+            /* 顶部外边距20px*/
+            margin-top: 20px;
+            /* 内边距左右10 上下20*/
+            padding: 10px 20px;
+            /* 圆角4px */
+            border-radius: 4px;
+            /* 边框无*/
+            outline: none;
+            /* 文字颜色*/
+            color: #999;
+            /* 字体大小*/
+            font-size: 18px;
+            /* 阴影*/
+            box-shadow: 0 -1px 0 #e0e0e0 inset, 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+        }
+        
+        .login-form-wrap .zhaohui {
+            margin: 20px auto;
+            width: 60%;
+            height: 30px;
+            /*     垂直居中*/
+            line-height: 30px;
+        }
+        
+        .login-form-wrap a {
+            /*   a标签是行内元素，必须转换为块状元素*/
+            display: block;
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <section class="login-form-wrap">
+            <h1>注册表</h1>
+            <!-- form表单 -->
+            <form class="login-form" action="post">
+                <label for="#"> 
+                    <!-- 邮箱 -->
+                <input type="email" name="email" required placeholder="Email" class="em-ail">
+                </label>
+                <!-- 密码 -->
+                <label for="#"> 
+                    <input type="password" name="password" class="pass-word" required placeholder="Password">
+                </label>
+                <button class="btn">登录</button>
+            </form>
+            <!-- 找回密码 -->
+            <h5 class="zhaohui">
+                <a href="#">找回密码</a>
+            </h5>
+        </section>
+    </body>
+</body>
+
+</html>
